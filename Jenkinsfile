@@ -1,7 +1,7 @@
 node () {
   stage ('SCM Checkout') {
     checkout scm
-  }
+  } 
   
   stage ('Docker image build') {
     sh 'docker build -t flaskapp .'
